@@ -1613,7 +1613,6 @@ export class GuiModel {
                             "width": 2,
                             "form" : {
                                 "form" : "ModuleForm"
-                        
                             }
                         },
                     ]
