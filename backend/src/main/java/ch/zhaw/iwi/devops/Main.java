@@ -146,13 +146,6 @@ public class Main {
 	private static void initDatabase() {
 		Properties properties = new Properties();
 		ProcessBuilder processBuilder = new ProcessBuilder();
-		/*if (processBuilder.environment().get(HEROKU_PORT) != null) {
-			properties.put("javax.persistence.jdbc.driver", Driver.class.getName());
-			properties.put("javax.persistence.jdbc.url", processBuilder.environment().get("JDBC_DATABASE_URL"));
-			properties.put("javax.persistence.jdbc.user", "");
-			properties.put("javax.persistence.jdbc.password", "");
-			properties.put("hibernate.dialect", PostgreSQL95Dialect.class.getName());
-		}*/
 		persistModule.properties(properties);
 		injector = Guice.createInjector(persistModule);
 		
